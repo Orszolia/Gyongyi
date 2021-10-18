@@ -1,0 +1,282 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2rem;
+}
+
+ol,
+li {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2rem;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+.my_card{
+  min-height: 400px;
+  margin: 10px;
+  border-style: solid; 
+  border-color: rgba(128, 128, 128, 0.109);
+  transition: 0.3s;
+}
+
+.my_card:hover{
+  transition: 0.3s;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.landing_text {
+  display: block;
+  position: absolute;
+  top: 20vh;
+}
+
+.mybutton {
+  font-family: "Open Sans", sans-serif;
+  border: #b19869;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 50px;
+  background-color: rgb(71, 71, 71);
+  transition: ease-in-out 0.3s;
+}
+
+.keressbutton {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 50px;
+  transition: ease-in-out 0.3s;
+}
+
+.mybutton:hover {
+  transform: scale(1.1);
+}
+
+.keressbutton:hover {
+  transform: scale(1.1);
+}
+
+.modal_img {
+  width: 100%;
+  max-height: 95%;
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+.card {
+  border: none;
+  background: transparent;
+}
+
+.circle {
+  border-radius: 50%;
+  padding: 50%;
+}
+
+.circle.yellow {
+  left: 680px;
+  top: 450px;
+  background-color: #ffdb96;
+  position: absolute;
+  z-index: -1;
+}
+
+.circle.orange {
+  left: -100vh;
+  right: -100vh;
+  top: 1400px;
+  background-color: #eb7f53;
+  position: absolute;
+  z-index: -1;
+}
+
+.irj_nekem {
+  text-align: center !important;
+  width: 100%;
+}
+
+.irj_nekem a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: bold;
+  font-size: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .circle.orange {
+    top: 400px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .circle.orange {
+    top: 390px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .circle.orange {
+    top: 380px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .circle.orange {
+    top: 370px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .circle.orange {
+    top: 360px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .circle.orange {
+    top: 350px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .col-sm {
+    font-size: 13px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .col-sm img {
+    max-width: 80px;
+  }
+  #hide_on_mobile {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* NAVBAR STYLES */
+
+.navbar.index {
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+
+.navbar.index.solid {
+  transition: 0.5s ease;
+  opacity: 0.9;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 18px;
+  padding: 10px 15px !important;
+  background-color: transparent;
+  border-radius: 5%;
+  transition: ease-in 0.2s;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+.icon {
+  color: white;
+  font-size: 35px;
+  transition: ease-in 0.2s;
+  margin: 7px 0px 0px 15px;
+}
+
+.icon:hover {
+  color: rgb(149, 142, 142);
+}
+
+/* BLOG STYLES */
+
+.portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(34, 23, 23, 0.424);
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffda96a4;
+  height: 100%;
+  width: 100%;
+  padding-top: 6px;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (min-width: 992px) {
+  .portfolio .portfolio-item .portfolio-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    background-color: #ffdb96;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .portfolio .portfolio-item .portfolio-item-caption:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+.portfolio-modal .close {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: grey;
+  opacity: 1;
+}
+
+.list-group-item.active {
+  background-color: #eb7f53 !important;
+  border: #eb7f53 !important;
+}
+
+@media screen and (max-width: 424px) {
+
+  .landing_text h2{
+    font-size: 70px;
+  }
+
+  section{
+    overflow: hidden;
+  }
+
+  .container h2{
+    font-size: 60px;
+  }
+}
